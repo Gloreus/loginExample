@@ -6,7 +6,7 @@ import com.vaadin.flow.server.auth.NavigationAccessControl;
 import scbt.rbs.arms.views.LoginView;
 
 
-public class NavigationAccessCheckerInitializer implements VaadinServiceInitListener {
+public class NavigationAccessCheckerInitializer implements VaadinServiceInitListener{
 
     private NavigationAccessControl accessControl;
 
@@ -21,4 +21,5 @@ public class NavigationAccessCheckerInitializer implements VaadinServiceInitList
             uiInitEvent.getUI().addBeforeEnterListener(accessControl);
         });
     }
+
 }
